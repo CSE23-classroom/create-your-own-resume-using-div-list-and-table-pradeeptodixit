@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Design</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Top Logo Section */
+    .logo {
+        background: #C7C6C6;
+        text-align: center;
+        padding: 15px;
+        font-weight: bold;
+    }
+
+    /* Main area = Sidebar + Right Content */
+    .container {
+        display: flex;
+        height: 400px; /* adjust as required */
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 30%;
+        background: #ffffff;
+        border-top: 4px solid antiquewhite;
+        border-right: 4px solid #c8c8c8;
+        text-align: center;
+        padding-top: 20px;
+        font-weight: bold;
+        border-bottom: 4px solid antiquewhite;
+    }
+
+    /* Right area (Header + Body stacked) */
+    .right-area {
+        width: 70%;
+    }
+
+    /* Header/Banner */
+    .header {
+        background: #2F1F1F;
+        height: 150px;
+        color: #000;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 4px solid antiquewhite;
+    }
+
+    /* Body Area */
+    .body-area {
+        background: #2F1F1F;
+        height: 240px;
+        color: #000;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 4px solid #c8c8c8;
+        border-bottom: 4px solid antiquewhite;
+    }
+
+    /* Footer */
+    .footer {
+        background: #C7C6C6;
+        text-align: center;
+        padding: 15px;
+        font-weight: bold;
+        margin-top: 2px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="logo">Logo</div>
+
+    <div class="container">
+        <div class="sidebar">Side Bar Navigation</div>
+
+        <div class="right-area">
+            <div class="header">Header/Banner</div>
+            <div class="body-area">Body Area</div>
+        </div>
+    </div>
+
+    <div class="footer">Footer</div>
+</body>
+</html>
