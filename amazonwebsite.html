@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>amazon website</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #eaeaea;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #131921;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: space-between;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #ff9900;
+      }
+
+      .search {
+        display: flex;
+        width: 50%;
+      }
+
+      .search input {
+        width: 100%;
+        padding: 8px;
+      }
+
+      .search button {
+        padding: 8px;
+        background-color: #febd69;
+        border: none;
+      }
+
+      .nav-items {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+      }
+
+      /* Menu */
+      .menu {
+        background-color: #232f3e;
+        color: white;
+        padding: 10px;
+      }
+
+      .menu span {
+        margin-right: 15px;
+      }
+
+      /* Hero */
+      .hero {
+        background-color: #cce7ff;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+      }
+
+      /* Products */
+      .products {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      .card {
+        background: white;
+        width: 22%;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .card img {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      .card p {
+        color: #007185;
+        cursor: pointer;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #131921;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="navbar">
+        <div class="logo">amazon</div>
+
+        <div class="search">
+          <input type="text" placeholder="search amazon" />
+          <button>🔍</button>
+        </div>
+
+        <div class="nav-items">
+          <div>Hello, Sign in<br /><b>Account</b></div>
+          <div>Returns<br /><b>& Orders</b></div>
+          <div>🛒 Cart</div>
+        </div>
+      </div>
+
+      <div class="menu">
+        <span>☰ All</span>
+        <span>Best Sellers</span>
+        <span>Mobiles</span>
+        <span>Electronics</span>
+        <span>Fashion</span>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>welcome to amazon</h2>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+      <div class="card">
+        <h3>Electronics</h3>
+        <img src="https://via.placeholder.com/200" />
+        <p>See more</p>
+      </div>
+
+      <div class="card">
+        <h3>Fashion</h3>
+        <img src="https://via.placeholder.com/200" />
+        <p>See more</p>
+      </div>
+
+      <div class="card">
+        <h3>Home & Kitchen</h3>
+        <img src="https://via.placeholder.com/200" />
+        <p>See more</p>
+      </div>
+
+      <div class="card">
+        <h3>Mobiles</h3>
+        <img src="https://via.placeholder.com/200" />
+        <p>See more</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 amazon</p>
+    </footer>
+  </body>
+</html>
