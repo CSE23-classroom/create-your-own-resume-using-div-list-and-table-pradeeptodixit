@@ -2,175 +2,317 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>amazon website</title>
-    <link rel="stylesheet" href="style.css" />
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: Arial, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
       }
 
       body {
-        background-color: #eaeaea;
+        background: #e3e6e6;
       }
 
-      /* Navbar */
-      .navbar {
-        background-color: #131921;
-        color: white;
+      a {
+        text-decoration: none;
+        color: #007185;
+      }
+
+      /* Header */
+      .header {
+        background: #131921;
+        color: #fff;
+      }
+
+      .nav {
         display: flex;
         align-items: center;
+        gap: 12px;
         padding: 10px;
-        justify-content: space-between;
       }
 
       .logo {
-        font-size: 28px;
-        font-weight: bold;
-        color: #ff9900;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .logo span {
+        color: #f3a847;
+      }
+
+      .location {
+        font-size: 12px;
       }
 
       .search {
+        flex: 1;
         display: flex;
-        width: 50%;
       }
 
-      .search input {
-        width: 100%;
-        padding: 8px;
-      }
-
-      .search button {
-        padding: 8px;
-        background-color: #febd69;
+      .search select {
+        padding: 10px;
         border: none;
       }
 
-      .nav-items {
-        display: flex;
-        gap: 20px;
+      .search input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+      }
+
+      .search button {
+        padding: 10px 14px;
+        border: none;
+        background: #febd69;
+      }
+
+      .nav-item {
+        font-size: 12px;
+      }
+
+      .nav-item strong {
+        display: block;
         font-size: 14px;
       }
 
-      /* Menu */
-      .menu {
-        background-color: #232f3e;
-        color: white;
-        padding: 10px;
+      .cart {
+        font-size: 16px;
+        font-weight: 600;
       }
 
-      .menu span {
-        margin-right: 15px;
+      .subnav {
+        background: #232f3e;
+        color: #fff;
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+      .subnav a {
+        color: #fff;
+        margin-right: 14px;
       }
 
       /* Hero */
       .hero {
-        background-color: #cce7ff;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
+        background: url("https://images.unsplash.com/photo-1515165562835-c4c5c9c1a3a0?q=80&w=1600&auto=format&fit=crop")
+          center/cover no-repeat;
+        height: 280px;
+        background: linear-gradient(180deg, #ffd77d, #e3e6e6);
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
       }
 
       /* Products */
-      .products {
-        display: flex;
-        justify-content: space-around;
-        padding: 20px;
+      .container {
+        max-width: 1200px;
+        margin: -120px auto 20px;
+        padding: 0 10px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
       }
 
       .card {
-        background: white;
-        width: 22%;
-        padding: 15px;
-        text-align: center;
+        background: #fff;
+        padding: 16px;
+        border-radius: 6px;
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
       }
 
       .card img {
         width: 100%;
-        margin: 10px 0;
+        height: 180px;
+        object-fit: cover;
+        margin-bottom: 10px;
       }
 
-      .card p {
-        color: #007185;
-        cursor: pointer;
+      .card a {
+        font-size: 14px;
       }
 
       /* Footer */
       footer {
-        background-color: #131921;
-        color: white;
+        background: #232f3e;
+        color: #fff;
+        margin-top: 30px;
+      }
+
+      .footer-top {
+        background: #37475a;
         text-align: center;
-        padding: 15px;
+        padding: 12px;
+      }
+
+      .footer-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 30px;
+      }
+
+      .footer-links h4 {
+        margin-bottom: 10px;
+      }
+
+      .footer-links a {
+        display: block;
+        color: #ddd;
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding: 14px;
+        background: #131921;
+        font-size: 12px;
       }
     </style>
   </head>
 
   <body>
     <!-- Header -->
-    <header>
-      <div class="navbar">
-        <div class="logo">amazon</div>
-
+    <header class="header">
+      <div class="nav">
+        <div class="logo">amazon<span>.in</span></div>
         <div class="search">
-          <input type="text" placeholder="search amazon" />
+          <select>
+            <option>All</option>
+          </select>
+          <input type="text" placeholder="search Amazon.in" />
           <button>🔍</button>
         </div>
-
-        <div class="nav-items">
-          <div>Hello, Sign in<br /><b>Account</b></div>
-          <div>Returns<br /><b>& Orders</b></div>
-          <div>🛒 Cart</div>
+        <div class="nav-item">
+          Hello, Sign in<strong>Account & Lists</strong>
         </div>
+        <div class="nav-item">Returns<strong>& Orders</strong></div>
+        <div class="cart">🛒 Cart</div>
       </div>
-
-      <div class="menu">
-        <span>☰ All</span>
-        <span>Best Sellers</span>
-        <span>Mobiles</span>
-        <span>Electronics</span>
-        <span>Fashion</span>
+      <div class="subnav">
+        <a href="#">All</a>
+        <a href="#">Fresh</a>
+        <a href="#">Amazon MiniTV</a>
+        <a href="#">Sell</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Mobiles</a>
+        <a href="#">Electronics</a>
+        <a href="#">Prime</a>
+        <a href="#">Amazon Pay</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <h2>welcome to amazon</h2>
-    </section>
+    <!-- Hero -->
+    <div class="hero">welcome to amazon – Big Deals, Great Prices</div>
 
     <!-- Products -->
-    <section class="products">
-      <div class="card">
-        <h3>Electronics</h3>
-        <img src="https://via.placeholder.com/200" />
-        <p>See more</p>
-      </div>
+    <main class="container">
+      <section class="grid">
+        <div class="card">
+          <h3>Up to 60% off | Electronics</h3>
+          <img
+            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800&auto=format&fit=crop"
+          />
+          <a href="#">Shop now</a>
+        </div>
+        <div class="card">
+          <h3>Revamp your home</h3>
+          <img
+            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=800&auto=format&fit=crop"
+          />
+          <a href="#">Explore</a>
+        </div>
+        <div class="card">
+          <h3>Home Decoration</h3>
+          <img
+            src="https://images.unsplash.com/photo-1521334884684-d80222895322?q=80&w=800&auto=format&fit=crop"
+          />
+          <a href="#">See more</a>
+        </div>
+        <div class="card">
+          <h3>Clothes</h3>
+          <img
+            src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=800&auto=format&fit=crop"
+          />
+          <a href="#">Find what fits you</a>
+        </div>
 
-      <div class="card">
-        <h3>Fashion</h3>
-        <img src="https://via.placeholder.com/200" />
-        <p>See more</p>
-      </div>
+        <div class="card">
+          <h3>Appliances for your home | Up to 65% off</h3>
+          <img
+            src="Refrigerators.webp"
+          />
+          <a href="#">Buy before the offer ends</a>
+        </div>
 
-      <div class="card">
-        <h3>Home & Kitchen</h3>
-        <img src="https://via.placeholder.com/200" />
-        <p>See more</p>
-      </div>
+        <div class="card">
+          <h3>Starting ₹199 | Headphones</h3>
+          <img
+            src="Headphones.avif"
+          />
+          <a href="#">Buy now</a>
+        </div>
 
-      <div class="card">
-        <h3>Mobiles</h3>
-        <img src="https://via.placeholder.com/200" />
-        <p>See more</p>
-      </div>
-    </section>
+        <div class="card">
+          <h3>Fashion essentials</h3>
+          <img
+            src="Fashion.webp"
+          />
+          <a href="#">Be up-to-date with the latest fashion brands</a>
+        </div>
+
+        <div class="card">
+          <h3>Beauty & personal care</h3>
+          <img
+            src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"
+          />
+          <a href="#">Discover</a>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-      <p>© 2025 amazon</p>
+      <div class="footer-top">Back to top</div>
+      <div class="footer-links">
+        <div>
+          <h4>Get to Know Us</h4>
+          <a href="#">About amazon</a>
+          <a href="#">Careers</a>
+          <a href="#">Press Releases</a>
+        </div>
+        <div>
+          <h4>Connect with Us</h4>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+        <div>
+          <h4>Make Money with Us</h4>
+          <a href="#">Sell on amazon</a>
+          <a href="#">Affiliate Program</a>
+          <a href="#">Advertise Your Products</a>
+        </div>
+        <div>
+          <h4>Let Us Help You</h4>
+          <a href="#">Your Account</a>
+          <a href="#">Returns Centre</a>
+          <a href="#">Help</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2025 amazon</div>
     </footer>
   </body>
 </html>
