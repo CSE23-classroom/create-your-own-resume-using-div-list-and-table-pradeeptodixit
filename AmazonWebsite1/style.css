@@ -305,6 +305,7 @@ main {
     flex-wrap: wrap;
     gap: 1.5rem;
     background-color: #c9cbcf82;
+    /* margin-top: 15px; */
     padding: 0 2rem 2rem 2rem;
 }
 
@@ -314,7 +315,7 @@ main {
     flex-direction: column;
     flex: 1 0 300px;
     gap: 1rem;
-    font-size: .7rem;
+    font-size: 0.7rem;
     background-color: white;
     padding: 1rem;
     cursor: pointer;
@@ -341,7 +342,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: .5rem;
+    font-size: 0.5rem;
     font-weight: bold;
     color: white;
     background-color: #37475A;
