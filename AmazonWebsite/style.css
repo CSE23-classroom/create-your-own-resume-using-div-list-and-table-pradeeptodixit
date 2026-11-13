@@ -299,8 +299,7 @@ body {
 
 .slider-btn:focus {
     border-color: seagreen;
-    box-shadow: -2px -2px 2px rgb(230, 227, 227),
-        2px 2px 2px white;
+    box-shadow: -2px -2px 2px rgb(230, 227, 227), 2px 2px 2px white;
     margin: 2px;
 }
 
@@ -382,23 +381,24 @@ body {
     padding-bottom: 100px;
 }
 
-/*product card container*/
+/* product card container */
 .main{
     position: relative;
-    top:-350px;
+    top: -350px;
     /* background-color: rgb(196, 240, 240); */
     /* filter: blur(8px); */
-    
 }
+
 .productBackgraound{
     background-color: rgba(213, 247, 247,0.4);
 }
+
 .card-product-container{
     padding: 20px;
     display: flex;
     justify-content: space-between;
-
 }
+
 .card-product{
     background-color: white;
     display: flex;
@@ -429,17 +429,16 @@ body {
     width: 128px;
     height: 102px;
     object-fit: cover;
-
 }
 
 .card-product-btn{
     font-size: 14px;
     align-self: flex-start;
-    margin: 7px 10px; 
+    margin: 7px 10px;
     padding-left: 0;
     background-color: transparent;
-    border:none;
-    color:rgb(25, 105, 105)
+    border: none;
+    color: rgb(25, 105, 105);
 }
 
 .card-product-btn:hover{
@@ -481,7 +480,6 @@ body {
 .today_deals_product_list{
     display: flex;
     overflow: hidden;
-
 }
 
 .today_deals_product_item{
@@ -501,7 +499,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .today_deals_product_item img{
