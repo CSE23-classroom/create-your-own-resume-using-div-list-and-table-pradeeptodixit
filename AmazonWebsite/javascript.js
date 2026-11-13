@@ -85,7 +85,7 @@ for (let i = 0; i < todayDeallength; i++) {
             
 
 
-            <div class="discount_Contaienr">
+            <div class="discount_Container">
                 <a href="#">Up to ${todayDeal[i].discount}% off</a>
                 <a href="#">${todayDeal[i].DealOfDay}</a>
             </div>

@@ -421,10 +421,6 @@ body {
     justify-content: space-evenly;
 }
 
-.card-nested {
-
-}
-
 .card-nested p{
     margin: 5px;
 }
@@ -519,18 +515,18 @@ body {
     justify-self: flex-end;
 }
 
-.discount_Contaienr{
-    /* border: 2px solid red; */
-}
+/* .discount_Container{
+    border: 2px solid red;
+} */
 
-.discount_Contaienr a{
+.discount_Container a{
     padding: 5px 10px;
     font-size: 14px;
     color:rgb(211, 30, 84);
     text-decoration: none;
 }
 
-.discount_Contaienr a:first-child{
+.discount_Container a:first-child{
     background-color: rgb(211, 30, 84);
     padding: 5px 10px;
     color:white;
